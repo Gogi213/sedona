@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+
+  <header class="page-header">
+    <nav class="main-nav">
+      <a class="main-nav__link" href="#">Главная</a>
+      <a class="main-nav__link" href="#">Фото и видео</a>
+      <a class="main-nav__link" href="#">Форма отзыва</a>
+      <a class="main-nav__link" href="#">Html Academy</a>
+    </nav>
+    <a class="logo" href="#">
+      <svg class="logo__picture">
+      </svg>
+    </a>
+    <button class="page-header__btn">
+    </button>
+  </header>
+
+  <main class="page-main">
+
+    <div class="title-screen">
+      <svg class="title-screen__picture">
+      </svg>
+    </div>
+
+    <div class="promo">
+      <h1 class="promo__title">Оставьте свой отзыв</h1>
+      <!-- Через каскад от блока: font-set и text-align -->
+      Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+    </div>
+
+    <form class="form" action="#">
+      <fieldset class="name">
+        <legend class="name__title">Представьтесь, пожалуйста:</legend>
+        <div class="name__inner">
+          <div class="name__input-group">
+            <label class="name__label" for="field-1">Имя</label>
+            <input class="name__input" type="text" placeholder="Петр" id="field-1">
+          </div>
+          <div class="name__input-group">
+            <label class="name__label" for="field-2">Фамилия</label>
+            <input class="name__input" type="text" id="field-2" placeholder="Иванов">
+          </div>
+          <div class="name__input-group">
+            <label class="name__label" for="field-3">Отчество</label>
+            <input class="name__input" type="text" id="field-3" placeholder="Александрович">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="contact-info">
+        <legend class="contact-info__title">Контактная информация:</legend>
+        <div class="contact-info__inner">
+          <div class="contact-info__input-group">
+            <label class="contact-info__label" for="field-4">Контактный телефон:</label>
+            <input class="contact-info__input" type="text" placeholder="Введите телефон" id="field-4">
+            <p class="contact-info__issue issue">Ошибка, перепроверьте номер</p>
+          </div>
+          <div class="contact-info__input-group">
+            <label class="contact-info__label" for="field-5">Электронная почта</label>
+            <input class="contact-info__input" type="text" id="field-5" placeholder="Введите e-mail">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="impression">
+        <legend class="impression__title">Ваше общее впечатление:</legend>
+        <div class="impression__inner">
+          <div class="impression__input-group">
+            <input class="impression__input" type="radio" name="impression" id="field-6" checked>
+            <label class="impression__label" for="field-6">Скорее положительное</label>
+          </div>
+          <div class="impression__input-group">
+            <input class="impression__input" type="radio" name="impression" id="field-7">
+            <label class="impression__label" for="field-7">Скорее отрицательное</label>
+          </div>
+          <div class="impression__input-group">
+            <input class="impression__input" type="radio" name="impression" id="field-8">
+            <label class="impression__label" for="field-8">Затрудняюсь ответить</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="attractions">
+        <legend class="attractions__title">Посещенные достопримечательности</legend>
+        <div class="attractions__inner">
+          <div class="attractions__input-group">
+            <input class="attractions__input" type="checkbox" name="achievement" id="field-9" checked>
+            <label class="attractions__label" for="field-9">Мост дьявола</label>
+          </div>
+          <div class="attractions__input-group">
+            <input class="attractions__input" type="checkbox" name="achievement" id="field-10" checked>
+            <label class="attractions__label" for="field-10">Слайд-парк</label>
+          </div>
+
+          <div class="attractions__input-group">
+            <input class="attractions__input" type="checkbox" name="achievement" id="field-11">
+            <label class="attractions__label" for="field-11">Гора-Колокол</label>
+          </div>
+          <div class="attractions__input-group">
+            <input class="attractions__input" type="checkbox" name="achievement" id="field-12">
+            <label class="attractions__label" for="field-12">Красные скалы</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="emotions">
+        <legend class="emotions__title">Опишите свои эмоции</legend>
+        <div class="emotions__iner">
+          <textarea class="emotions__input" name="emotions" id="" cols="30" rows="10" >Опишите подробно все свои восторги</textarea>
+        </div>
+      </fieldset>
+      <button class="form__btn" type="submit"></button>
+    </form>
+
+    <footer class="page-footer">
+
+      <div class="hashtag">#visitsedona</div>
+
+      <div class="social-links">
+        <a href="#" class="social-links__item social-links__item--tw">
+          <svg class="social-links__picture">
+          </svg>
+        </a>
+        <a href="#" class="social-links__item social-links__item--fb">
+          <svg class="social-links__picture">
+          </svg>
+        </a>
+        <a href="#" class="social-links__item social-links__item--yt">
+          <svg class="social-links__picture">
+          </svg>
+        </a>
+      </div>
+
+      <div class="copyright">
+        <span>Разработано</span>
+        <svg class="copyright__picture">
+        </svg>
+      </div>
+    </footer>
+
+  </main>
+</body>
+
+</html>
